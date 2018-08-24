@@ -23,4 +23,6 @@ import po.Userm;
 public interface UsermMapper {
   @Select("select id,username,age,phone,descr from userm where id=#{id}")
   public Userm selectUserm(Integer id);
+  
+  public Userm selectUsermForXml(Integer id);
 }
